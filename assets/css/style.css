@@ -590,6 +590,22 @@ video {
   width: 100vw;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[87\%\] {
+  width: 87%;
+}
+
+.w-\[89\%\] {
+  width: 89%;
+}
+
+.w-\[92\%\] {
+  width: 92%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -661,6 +677,11 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pl-3 {
@@ -761,6 +782,10 @@ video {
 @media (min-width: 640px) {
   .sm\:h-screen {
     height: 100vh;
+  }
+
+  .sm\:w-\[75\%\] {
+    width: 75%;
   }
 
   .sm\:justify-end {
