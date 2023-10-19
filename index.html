@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Poppins:ital,wght@0,400;0,700;0,800;0,900;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Frontend Mentor | Age calculator app</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body
+		class="font-poppins sm:h-screen w-screen bg-Lightgrey flex items-center justify-center flex-col"
+	>
+		<div
+			class="general bg-white w-11/12 m-auto h-[80%] mt-10 rounded-br-large rounded-bl-lg rounded-tr-lg rounded-tl-lg md:w-[75%] md:h-[75%] lg:w-[50%] lg:h-[100%]"
+		>
+			<div class="dayinfo p-4 md:pl-14">
+				<div
+					class="days-group flex justify-between pt-6 w-[75%] text-sm text-Smokeygrey font-poppins uppercase md:w-[60%] font-bold"
+				>
+					<p class="uppercase tracking-widest label">Day</p>
+					<p class="uppercase tracking-widest label">Month</p>
+					<p class="uppercase tracking-widest label">Year</p>
+				</div>
+				<div class="form pt-3 pl-3">
+					<form
+						action="input"
+						class="w-[95%] flex items-center justify-between space-x-2 text-Smokeygrey form"
+					>
+						<div>
+							<input
+								type="text"
+								name="text"
+								id="text"
+								placeholder="DD"
+								class="w-[70%] sm:p-3 text-3xl font-bold border-2 rounded-md outline-none text-Offblack day"
+							/>
+							
+							<p
+								class="text-Lightred text-xs mt-2 italic  error error-day"
+							>
+								
+							</p>
+						</div>
+						<div>
+							<input
+								type="text"
+								name="text"
+								id="month"
+								placeholder="MM"
+								class="w-[70%] sm:p-3 text-3xl font-bold border-2 rounded-md outline-none text-Offblack month"
+							/>
+							
+          
+							<p
+								class="text-Lightred text-xs mt-2 italic  error error-month"
+							>
+								
+							</p>
+						</div>
+						<div>
+							<input
+								type="text"
+								name="text"
+								id="year"
+								placeholder=" YYYY"
+								class="w-[70%] sm:p-3 text-3xl font-bold border-2 rounded-md outline-none text-Offblack year"
+							/>
+						
+							<p
+								class="text-Lightred text-xs mt-2 italic  error error-year"
+							>
+								
+							</p>
+						</div>
+					</form>
+				</div>
+				<div
+				class="line border-b-2 w-[90%] m-auto flex justify-center sm:justify-end"
+			>
+				<button
+					class="rounded-full bg-Purple p-4 relative top-10 hover:bg-Offblack submit-button"
+					type="submit"
+				>
+					<img src="./assets/images/icon-arrow.svg" alt="arrow-down" />
+				</button>
+			</div>
+			</div>
+			
+			<div class="numbers p-4 mt-10 md:mt-0 md:pl-14">
+				<p class="text-Offblack text-6xl italic font-extrabold md:text-7xl">
+					<span class="text-6xl text-Purple md:text-7xl year-result">- -</span>
+					years
+				</p>
+				<p class="text-Offblack text-6xl italic font-extrabold md:text-7xl">
+					<span class="text-6xl text-Purple sm:text-7xl month-result">- -</span>
+					months
+				</p>
+				<p class="text-Offblack text-6xl italic font-extrabold md:text-7xl">
+					<span class="text-6xl text-Purple sm:text-7xl day-result">- -</span>
+					days
+				</p>
+			</div>
+		</div>
+
+		<div class="attribution mt-4 text-2xl">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Nnadi Emmanuel Onyedikachi</a>.
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
