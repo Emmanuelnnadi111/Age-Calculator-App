@@ -562,10 +562,6 @@ video {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-\[80\%\] {
   height: 80%;
 }
@@ -751,6 +747,10 @@ video {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.d {
+  color: #ff5757;
 }
 
 .hover\:bg-Offblack:hover {

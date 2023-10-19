@@ -17,12 +17,16 @@ function checkDayInput() {
     let value = inputDay.value;
     if(value == '') {
         dayError.innerHTML = inputRequiredError;
-        return false;
+        inputDay.style.borderColor = '#ff5757';
+        document.querySelector('.label').style.color = '#ff5757';
+        return false;   
     } else if (value < 1 || value > 31) {
         dayError.innerHTML = inputDayError;
         return false;
     } else {
         dayError.innerHTML = '';
+        inputDay.style.borderColor = 'none';
+        document.querySelector('.label').style.color = 'none';
         return true;
     }
 }
@@ -30,12 +34,16 @@ function checkMonthInput() {
     let value = inputMonth.value;
     if(value == '') {
         monthError.innerHTML = inputRequiredError;
+        inputMonth.style.borderColor = '#ff5757';
+        document.querySelector('.label-2').style.color = '#ff5757';
         return false;
     } else if (value < 1 || value > 12) {
         monthError.innerHTML = inputMonthError;
         return false;
     } else {
-        dayError.innerHTML = '';
+        monthError.innerHTML = '';
+        inputMonth.style.borderColor = 'none';
+        document.querySelector('.label-2').style.color = 'none';
         return true;
     }
 }
@@ -45,12 +53,17 @@ function checkYearInput() {
     console.log(currentYear);
     if(value == '') {
         yearError.innerHTML = inputRequiredError;
+        document.querySelector('.label-3').style.color = '#ff5757';
+        inputYear.style.borderColor = '#ff5757';
         return false;
     } else if (value  > currentYear) {
         yearError.innerHTML = inputYearError;
         return false;
     } else {
         yearError.innerHTML = '';
+        inputYear.style.borderColor = 'none';
+        document.querySelector('.label-3').style.color = 'none';
+        
         return true;
     }
 }
